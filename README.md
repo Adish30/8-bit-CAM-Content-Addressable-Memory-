@@ -12,3 +12,5 @@ First I have generated a 1 bit CAM using NAND gates.
 ![Screenshot 2024-06-29 084226](https://github.com/Adish30/8-bit-CAM-Content-Addressable-Memory-/assets/114245305/0c2d0e9a-fa1e-454b-ad21-383262545141)
 Next, using the above instantiation, 8 bit CAM can be generated.
 ![Screenshot 2024-06-29 084155](https://github.com/Adish30/8-bit-CAM-Content-Addressable-Memory-/assets/114245305/4b7ddf4b-a356-485d-90c9-d14922d78960)
+The simulation output of the circuit.(Glowing of LEDS indicate the BL and SL are same and outut Matched Line is high)
+![Screenshot 2024-06-29 085421](https://github.com/Adish30/8-bit-CAM-Content-Addressable-Memory-/assets/114245305/bb60c3c2-b494-41a4-8e76-49a79905f2cb)
