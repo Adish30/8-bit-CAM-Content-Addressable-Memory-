@@ -1,0 +1,28 @@
+// DSCH 2.7a
+// 28-06-2024 14:42:58
+// D:\Export dsch2\Export dsch2\CAM_1BIT_MOS.sch
+
+module CAM_1BIT_MOS( BL,SL,ML);
+ input BL,SL;
+ output ML;
+ nmos #(17) nmos(w3,SL_PAD,w2); // 1.0u 0.12u
+ nmos #(10) nmos(w5,w3,w4); // 1.0u 0.12u
+ nmos #(38) nmos(w4,BL_PAD,vdd); // 1.0u 0.12u
+ nmos #(3) nmos(w7,w2,vdd); // 1.0u 0.12u
+ nmos #(17) nmos(ML_PAD,vss,w3); // 1.0u 0.12u
+ pmos #(38) pmos(w4,vdd,w2); // 2.0u 0.12u
+ pmos #(38) pmos(w2,vdd,w4); // 2.0u 0.12u
+ nmos #(38) nmos(w4,vss,w2); // 1.0u 0.12u
+ nmos #(38) nmos(w2,vss,w4); // 1.0u 0.12u
+ not #(10) inv(w5,SL_PAD);
+ not #(3) inv(w9,BL_PAD);
+endmodule
+
+// Simulation parameters in Verilog Format
+always
+#1000 BL=~BL;
+#2000 SL=~SL;
+
+// Simulation parameters
+// BL CLK 10.000 10.000
+// SL CLK 20.000 20.000

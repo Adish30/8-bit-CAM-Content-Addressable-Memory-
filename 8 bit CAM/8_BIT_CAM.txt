@@ -1,0 +1,114 @@
+// DSCH 2.7a
+// 29-06-2024 08:32:11
+// D:\Export dsch2\Export dsch2\8_BIT_CAM.sch
+
+module 8_BIT_CAM( out1,out2);
+ output out1,out2;
+ wire w16,w17,w18,w19,w20,w21,w22,w23;
+ wire w24,w25,w26,w27,w28,w29,w30,w31;
+ wire w32,w33,w34,w35,w36,w37,w38,w39;
+ wire w40,w41,w42,w43,w44,w45,w46,w47;
+ wire w48,w49,w50,w51,w52,w53,w54,w55;
+ wire w56,w57,w58,w59,w60,w61,w62,w63;
+ wire w64,w65,w66,w67,w68,w69,w70,w71;
+ wire w72,w73,w74,w75,w76,w77,w78,w79;
+ wire w80,w81,w82,w83,w84,w85,w86,w87;
+ and #(1) and2(w10,w8,w5);
+ and #(1) and2(w11,w7,w10);
+ and #(1) and2(out1,w9,w11);
+ and #(1) and2(out2,w14,w3);
+ and #(1) and2(w14,w15,w4);
+ and #(1) and2(w15,w1,w2);
+ nmos #(9) nmos_CA1(w18,w16,w17); //  
+ nmos #(5) nmos_CA2(w20,w18,w19); //  
+ nmos #(20) nmos_CA3(w19,w21,vdd); //  
+ nmos #(2) nmos_CA4(w22,w17,vdd); //  
+ nmos #(8) nmos_CA5(w23,vss,w18); //  
+ pmos #(20) pmos_CA6(w19,vdd,w17); //  
+ pmos #(20) pmos_CA7(w17,vdd,w19); //  
+ nmos #(20) nmos_CA8(w19,vss,w17); //  
+ nmos #(20) nmos_CA9(w17,vss,w19); //  
+ not #(5) inv_CA10(w20,w16);
+ not #(2) inv_CA11(w24,w21);
+ nmos #(9) nmos_CA12(w27,w25,w26); //  
+ nmos #(5) nmos_CA13(w29,w27,w28); //  
+ nmos #(20) nmos_CA14(w28,w30,vdd); //  
+ nmos #(2) nmos_CA15(w31,w26,vdd); //  
+ nmos #(8) nmos_CA16(w32,vss,w27); //  
+ pmos #(20) pmos_CA17(w28,vdd,w26); //  
+ pmos #(20) pmos_CA18(w26,vdd,w28); //  
+ nmos #(20) nmos_CA19(w28,vss,w26); //  
+ nmos #(20) nmos_CA20(w26,vss,w28); //  
+ not #(5) inv_CA21(w29,w25);
+ not #(2) inv_CA22(w33,w30);
+ nmos #(9) nmos_CA23(w36,w34,w35); //  
+ nmos #(5) nmos_CA24(w38,w36,w37); //  
+ nmos #(20) nmos_CA25(w37,w39,vdd); //  
+ nmos #(2) nmos_CA26(w40,w35,vdd); //  
+ nmos #(8) nmos_CA27(w41,vss,w36); //  
+ pmos #(20) pmos_CA28(w37,vdd,w35); //  
+ pmos #(20) pmos_CA29(w35,vdd,w37); //  
+ nmos #(20) nmos_CA30(w37,vss,w35); //  
+ nmos #(20) nmos_CA31(w35,vss,w37); //  
+ not #(5) inv_CA32(w38,w34);
+ not #(2) inv_CA33(w42,w39);
+ nmos #(9) nmos_CA34(w45,w43,w44); //  
+ nmos #(5) nmos_CA35(w47,w45,w46); //  
+ nmos #(20) nmos_CA36(w46,w48,vdd); //  
+ nmos #(2) nmos_CA37(w49,w44,vdd); //  
+ nmos #(8) nmos_CA38(w50,vss,w45); //  
+ pmos #(20) pmos_CA39(w46,vdd,w44); //  
+ pmos #(20) pmos_CA40(w44,vdd,w46); //  
+ nmos #(20) nmos_CA41(w46,vss,w44); //  
+ nmos #(20) nmos_CA42(w44,vss,w46); //  
+ not #(5) inv_CA43(w47,w43);
+ not #(2) inv_CA44(w51,w48);
+ nmos #(9) nmos_CA45(w54,w52,w53); //  
+ nmos #(5) nmos_CA46(w56,w54,w55); //  
+ nmos #(20) nmos_CA47(w55,w57,vdd); //  
+ nmos #(2) nmos_CA48(w58,w53,vdd); //  
+ nmos #(8) nmos_CA49(w59,vss,w54); //  
+ pmos #(20) pmos_CA50(w55,vdd,w53); //  
+ pmos #(20) pmos_CA51(w53,vdd,w55); //  
+ nmos #(20) nmos_CA52(w55,vss,w53); //  
+ nmos #(20) nmos_CA53(w53,vss,w55); //  
+ not #(5) inv_CA54(w56,w52);
+ not #(2) inv_CA55(w60,w57);
+ nmos #(9) nmos_CA56(w63,w61,w62); //  
+ nmos #(5) nmos_CA57(w65,w63,w64); //  
+ nmos #(20) nmos_CA58(w64,w66,vdd); //  
+ nmos #(2) nmos_CA59(w67,w62,vdd); //  
+ nmos #(8) nmos_CA60(w68,vss,w63); //  
+ pmos #(20) pmos_CA61(w64,vdd,w62); //  
+ pmos #(20) pmos_CA62(w62,vdd,w64); //  
+ nmos #(20) nmos_CA63(w64,vss,w62); //  
+ nmos #(20) nmos_CA64(w62,vss,w64); //  
+ not #(5) inv_CA65(w65,w61);
+ not #(2) inv_CA66(w69,w66);
+ nmos #(9) nmos_CA67(w72,w70,w71); //  
+ nmos #(5) nmos_CA68(w74,w72,w73); //  
+ nmos #(20) nmos_CA69(w73,w75,vdd); //  
+ nmos #(2) nmos_CA70(w76,w71,vdd); //  
+ nmos #(8) nmos_CA71(w77,vss,w72); //  
+ pmos #(20) pmos_CA72(w73,vdd,w71); //  
+ pmos #(20) pmos_CA73(w71,vdd,w73); //  
+ nmos #(20) nmos_CA74(w73,vss,w71); //  
+ nmos #(20) nmos_CA75(w71,vss,w73); //  
+ not #(5) inv_CA76(w74,w70);
+ not #(2) inv_CA77(w78,w75);
+ nmos #(9) nmos_CA78(w81,w79,w80); //  
+ nmos #(5) nmos_CA79(w83,w81,w82); //  
+ nmos #(20) nmos_CA80(w82,w84,vdd); //  
+ nmos #(2) nmos_CA81(w85,w80,vdd); //  
+ nmos #(8) nmos_CA82(w86,vss,w81); //  
+ pmos #(20) pmos_CA83(w82,vdd,w80); //  
+ pmos #(20) pmos_CA84(w80,vdd,w82); //  
+ nmos #(20) nmos_CA85(w82,vss,w80); //  
+ nmos #(20) nmos_CA86(w80,vss,w82); //  
+ not #(5) inv_CA87(w83,w79);
+ not #(2) inv_CA88(w87,w84);
+endmodule
+
+// Simulation parameters in Verilog Format
+
+// Simulation parameters
